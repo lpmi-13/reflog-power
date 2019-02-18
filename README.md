@@ -128,7 +128,7 @@ ago.
 
 After checking out the commit, our terminal should look something like:
 ```
-Note: checking out 'HEAD@{2}'.
+Note: checking out 'HEAD@{1}'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -149,7 +149,7 @@ So now that we've checked out that commit, we should see something like
 this when we run `git status`:
 
 ```
-HEAD detached at e5380bb
+HEAD detached at 51bc648
 nothing to commit, working tree clean
 ```
 
