@@ -46,9 +46,9 @@ git commit -m 'add a new script'
 ```
 
 Now you will have one new file on your new branch. Let's go back
-to our `master` branch and take stock of things.
+to our `main` branch and take stock of things.
 
-`git checkout master`
+`git checkout main`
 
 If we want to remind ourselves of what happened in the other branch
 we can simply type:
@@ -91,9 +91,9 @@ First, go ahead and access the reflog:
 
 You should see something like this:
 ```
-9cdc824 (HEAD -> master) HEAD@{0}: checkout: moving from new_script to master
+9cdc824 (HEAD -> main) HEAD@{0}: checkout: moving from new_script to main
 51bc648 HEAD@{1}: commit: add a new script
-9cdc824 (HEAD -> master) HEAD@{2}: checkout: moving from master to new_script
+9cdc824 (HEAD -> main) HEAD@{2}: checkout: moving from main to new_script
 ```
 (the hashes at the beginning will be different, and you might have slightly
 different numbers in `HEAD@{#}`, but the important part is that you have
@@ -164,11 +164,11 @@ stick around, so let's do that with:
 
 `git checkout -b new_script_back_to_life`
 
-Now return to the `master` branch:
+Now return to the `main` branch:
 
-`git checkout master`
+`git checkout main`
 
-There are a few ways to get stuff from that other branch into your `master` branch,
+There are a few ways to get stuff from that other branch into your `main` branch,
 but since we only need one file, let's just do it the easy way:
 
 `git checkout new_script_back_to_life new_script.js`  
@@ -181,7 +181,7 @@ this syntax means something like
 And now, if you run `git status`, you should see the new file in the output:
 
 ```
-On branch master
+On branch main
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
